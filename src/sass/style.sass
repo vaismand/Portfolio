@@ -1,32 +1,47 @@
+* 
+    margin: 0
+    font-family: 'Raleway', sans-serif
 header
     min-height: 40px
     nav
+        height: 40px
         position: fixed
         display: inline-block
         width: 100%
         background-color: #144450 
         .menu
+            padding-top: 10px
             display: flex
             flex-direction: row
             list-style: none
-            justify-content: space-between
             &_item
                 text-decoration: none
                 color: white
                 font-size: 20px
                 margin-right: 15px
-                a:link 
-                text-decoration: none
-                color: white
+                font-weight: 700
+                a:-webkit-any-link
+                    text-decoration: none
+                    color: white
 .main
     min-height: 1000px
     background: url("../img/firstbg2.png") center center/cover no-repeat
     h1 
-        min-width: 600px
+        max-width: 550px
         display: block
-        padding: 220px 55px 0 0
+        margin: 20px 0 0 0
         text-align: center
         font-size: 40px
-        color: #144450
+        color: #144450b7
+        border: solid 2px white
+        border-radius: 40px
+        background-color: white
+    h2 
+        margin-top: 26px
+        text-align: center
+        font-size: 30px
+        color: #1444509d
+        padding-right: 55px
+        line-height: 45px
 
 
