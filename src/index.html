@@ -16,15 +16,15 @@
     <nav>
         <ul class="menu">
             <li class="menu_item"><a href="#">Home</a>
-                <i class="fas fa-home"></i>
+                <i class="fas fa-home"></i></li>
             <li class="menu_item"><a href="#">My skills</a>
-                <i class="fab fa-html5"></i>
+                <i class="fab fa-html5"></i></li>
             <li class="menu_item"><a href="#">Portfolio</a>
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github"></i></li>
             <li class="menu_item"><a href="#">News</a>
-                <i class="far fa-newspaper"></i>
+                <i class="far fa-newspaper"></i></li>
             <li class="menu_item"><a href="#">Contact me</a>
-                <i class="fas fa-address-book"></i>
+                <i class="fas fa-address-book"></i></li>
         </ul>
     </nav>
 </header>
@@ -35,15 +35,20 @@
 <section class="skills">
     <div class="container">
         <h1>My Skills</h1>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JS</li>
-            <li>SASS</li>
-            <li>Bootstrap4</li>
-            <li>JQuery</li>
-            <li>Git</li>
-        </ul>
+        <div class="skills_list">
+            <div class="skills_list_item">
+                <img src="icons/html.png" alt="html">
+                <div class="skills_descr">
+                    Creating web sites with short, responsive and adaptive code
+                </div>
+            </div>
+            <div class="skills_list_item"><img src="icons/css.png" alt="css"></div>
+            <div class="skills_list_item"><img src="icons/js.png" alt="js"></div>
+            <div class="skills_list_item">SASS</div>
+            <div class="skills_list_item"><img src="icons/bootstrap.png" alt="bootstrap"></div>
+            <div class="skills_list_item"><img src="icons/jquery.png" alt="jquery"></div>
+            <div class="skills_list_item">Git</div>
+        </div>
     </div>
 </section>
 <section class="portfolio">
@@ -51,13 +56,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/first_site.jpg" class="d-block w-100" alt="first site">
+            <img src="img/first_site.jpg" class="center-block w-50" alt="first site">
           </div>
           <div class="carousel-item">
-            <img src="img/first_site.jpg" class="d-block w-100" alt="second site">
+            <img src="img/first_site.jpg" class="center-block w-50" alt="second site">
           </div>
           <div class="carousel-item">
-            <img src="img/first_site.jpg" class="d-block w-100" alt="third site">
+            <img src="img/first_site.jpg" class="center-block w-50" alt="third site">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

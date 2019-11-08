@@ -11,7 +11,8 @@ header
         position: fixed
         display: inline-block
         width: 100%
-        background-color: #144450 
+        background-color: #144450
+        z-index: 9 
         .menu
             padding-top: 10px
             display: flex
@@ -61,18 +62,53 @@ header
 .skills
     background-color: #CCD9D7
     padding: 60px 0 60px 0
+    height: 700px
     h1 
         text-align: center
         font-weight: 700
         font-size: 40px
         color: #144450b7
-        ul 
-            list-style: none
+    .skills_list
+        margin-top: 20px
+        list-style: none
+        display: flex
+        flex-flow: wrap
+        justify-content: space-around
+        align-content: center
+        align-items: center
+        .skills_list_item
+            width: 300px
+            min-height: 400px
+            img
+                display: block
+                margin: 0 auto
+                width: 100px
+                height: 100px
+            .skills_descr
+                margin-top: 15px
+                text-align: center
 .portfolio
+    position: relative
     background-color: #AEC0BD
     padding: 60px 0 60px 0
     min-height: 600px
-    h1 
+    .carousel-control-prev
+        position: absolute
+        left: 160px
+        .carousel-control-prev-icon
+            width: 35px
+            height: 35px
+    .carousel-control-next
+        position: absolute
+        right: 160px
+        .carousel-control-next-icon
+            width: 35px
+            height: 35px
+    .carousel-item img
+        margin: auto
+        display: block   
+    h1
+        margin-bottom: 30px 
         text-align: center
         font-weight: 700
         font-size: 40px
