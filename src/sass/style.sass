@@ -1,10 +1,23 @@
-@import "animation"
+
 body 
     margin: 0
     font-family: 'McLaren', cursive
 .container 
     max-width: 950px
     margin: 0 auto
+.title
+    max-width: 250px
+    display: block
+    margin: 0 auto
+    text-align: center
+    font-weight: 700
+    font-size: 40px
+    line-height: 60px
+    color: #144450b7
+    margin-bottom: 60px
+    border: solid 2px #144450b7
+    border-radius: 40px
+    background-color: white
 header
     min-height: 40px
     nav
@@ -32,20 +45,20 @@ header
                 i 
                     color: #CCD9D7
 .main
+    position: relative
     min-height: 1000px
     padding-top: 40px
     background: url("../img/firstbg2.png") center center/cover no-repeat
+    .tablet
+        position: absolute
+        top: 231px
+        left: 133px
+        line-height: 33px
+        span 
+            font-weight: bold
+            font-size: 15px
     h1 
         max-width: 550px
-        display: block
-        margin: 0 auto
-        text-align: center
-        font-size: 40px
-        font-weight: bold
-        color: #144450b7
-        border: solid 2px #144450b7
-        border-radius: 40px
-        background-color: white
     h2 
         display: block
         margin: 0 auto
@@ -63,18 +76,6 @@ header
     background-color: #CCD9D7
     padding: 60px 0 60px 0
     height: 700px
-    h1 
-        max-width: 250px
-        display: block
-        margin: 0 auto
-        text-align: center
-        font-weight: 700
-        font-size: 40px
-        color: #144450b7
-        margin-bottom: 60px
-        border: solid 2px #144450b7
-        border-radius: 40px
-        background-color: white
     .skills_list
         margin-top: 20px
         list-style: none
@@ -95,59 +96,41 @@ header
                 margin: 0 auto
                 width: 100px
                 height: 100px
-                animation-name: move
-                animation-duration: 4s
             .skills_descr
                 margin-top: 15px
                 text-align: center
 .portfolio
     position: relative
-    background-color: #AEC0BD
     padding: 60px 0 60px 0
-    min-height: 600px
+    height: 700px
+    background-color: #AEC0BD
     .carousel-control-prev
         position: absolute
-        left: 100px
+        left: 50px
         .carousel-control-prev-icon
             width: 35px
             height: 35px
     .carousel-control-next
         position: absolute
-        right: 100px
+        right: 50px
         .carousel-control-next-icon
             width: 35px
             height: 35px
     .carousel-item img
-        margin: auto
-        display: block   
-    h1
-        max-width: 250px
         display: block
         margin: 0 auto
-        margin-bottom: 30px 
-        text-align: center
-        font-weight: 700
-        font-size: 40px
-        color: #144450b7
-        border: solid 2px #144450b7
-        border-radius: 40px
-        background-color: white
+        width: 600px
+        height: 400px
+    .center-block
+        opacity: 0.9
+    a 
+        text-decoration: none
+        color: #144450    
 .news
-    min-height: 600px
+    min-height: 700px
     background-color: #CCD9D7
     padding: 60px 0
-    h1 
-        max-width: 250px
-        display: block
-        margin: 0 auto
-        text-align: center
-        font-size: 40px
-        font-weight: 700
-        color: #144450b7
-        margin-bottom: 20px
-        border: solid 2px #144450b7
-        border-radius: 40px
-        background-color: white
+    background: url("../img/network.jpg") center center/cover no-repeat
     &_blog
         display: flex
         flex-direction: row
@@ -156,8 +139,8 @@ header
             padding: 10px 10px
             width: 290px
             text-align: center
-            background-color: #144450
-            color: white
+            background-color: #CCD9D7
+            color: #144450
             border: solid 2px white
             border-radius: 10px
             .news_title
@@ -168,20 +151,16 @@ footer
     min-height: 100px
     background-color: #AEC0BD
     padding: 60px 0
-    h1 
-        text-align: center
-        font-size: 30px
-        font-weight: 700
-        color: #144450b7
     .footer_contacts
-        margin-top: 20px
+        margin: 0 auto
+        margin-top: 45px
         display: flex
-        justify-content: center
+        width: 400px
+        justify-content: space-between
         flex-direction: row
         list-style: none
         font-size: 30px
         a
-            margin-right: 50px
             text-decoration: none
             color: #144450b7
             

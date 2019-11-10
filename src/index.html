@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -29,57 +30,76 @@
     </nav>
 </header>
 <section class="main">
-    <h1>Freelance Web-Developer</h1>
+    <div class="tablet">
+        <span>Name:</span> David Vaisman<br>
+        <span>Place:</span> Vienna, Austria<br>
+        <span>Speciality:</span> Web-Developer<br>
+        <span>Education:</span> Udemy courses<br>
+        <span>Job-style:</span> Freelance
+    </div>
+    <h1 class="title">Freelance Web-Developer</h1>
     <h2>Hi There! My name is David and I am self-taught Web-Developer located in Vienna, AT</h2>
 </section>
 <section id="skills" class="skills">
     <div class="container">
-        <h1>My Skills</h1>
+        <h1 class="title">My Skills</h1>
         <div class="skills_list">
             <div class="skills_list_item">
-                <img src="icons/html.png" alt="html">
+                <img src="icons/html.png" alt="html" class="wow slideInLeft animated">
                 <div class="skills_descr">
                     Creating web sites with short, responsive and adaptive code
                 </div>
             </div>
             <div class="skills_list_item">
-                <img src="icons/css3.png" alt="css">
+                <img src="icons/css3.png" alt="css" class="wow slideInUp animated">
                 <div class="skills_descr">Using all new features of CSS3, as flexboxing, animations etc.</div>
             </div>
             <div class="skills_list_item">
-                <img src="icons/js.png" alt="js">
+                <img src="icons/js.png" alt="js" class="wow slideInRight animated">
                 <div class="skills_descr">Javascript for making your site interactive and responsive</div>
             </div>
             <div class="skills_list_item">
-                <img src="icons/sass.png" alt="sass">
+                <img src="icons/sass.png" alt="sass" class="wow slideInLeft animated">
                 <div class="skills_descr">
                     Sass stylesheet language for better and faster work on your project
                 </div>
             </div>
             <div class="skills_list_item">
-                <img src="icons/bootstrap.png" alt="bootstrap">
+                <img src="icons/bootstrap.png" alt="bootstrap" class="wow slideInUp animated">
                 <div class="skills_descr">Bootstrap4 for more interactivity and adaptivity of your sites</div>
             </div>
             <div class="skills_list_item">
-                <img src="icons/jquery.png" alt="jquery">
+                <img src="icons/jquery.png" alt="jquery" class="wow slideInRight animated">
                 <div class="skills_descr">Jquery library and tools for better functionality of your site</div>
             </div>
         </div>
     </div>
 </section>
 <section id="portfolio" class="portfolio">
-    <h1>My Works</h1>
+    <h1 class="title">My Works</h1>
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="img/first_site.jpg" class="center-block w-40" alt="first site">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><a href="vaismand.github.io">URL</a></h5>
+                    <p><a href="https://github.com/vaismand/vaismand.github.io">Github</a></p>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="img/first_site.jpg" class="center-block w-40" alt="second site">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><a href="vaismand.github.io">URL</a></h5>
+                    <p><a href="https://github.com/vaismand/vaismand.github.io">Github</a></p>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="img/first_site.jpg" class="center-block w-40" alt="third site">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5><a href="vaismand.github.io">URL</a></h5>
+                    <p><a href="https://github.com/vaismand/vaismand.github.io">Github</a></p>
+                </div>
             </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -95,7 +115,7 @@
 </section>
 <section id="news" class="news">
     <div class="container">
-        <h1>IT News</h1>
+        <h1 class="title">IT News</h1>
         <div class="news_blog">
             <div class="news_blog_item">
                 <div class="news_title">Modern web development: what makes it ‘modern’?
@@ -120,7 +140,7 @@
 </section>
 <footer id="contact_me">
     <div  class="container">
-        <h1>Contact Me</h1>
+        <h1 class="title">Contact Me</h1>
         <div class="footer_contacts">
             <a href="mailto:vaisman.david91@gmail.com"><i class="far fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/david-vaisman-041212129/"><i class="fab fa-linkedin"></i></a>
@@ -132,6 +152,8 @@
 </footer>
 <script src="js/jquary.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="https://kit.fontawesome.com/bbb5a677af.js" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
