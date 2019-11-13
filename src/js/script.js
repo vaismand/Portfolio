@@ -16,4 +16,14 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+$(document).ready(function(){
+    $('.portfolio-carousel').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+});
+
 new WOW().init();
