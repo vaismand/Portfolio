@@ -7,9 +7,10 @@
             img 
                 width: 250px
                 height: 350px
+                margin-left: -30px
             &_text
                 top: 66px
-                left: 35px
+                left: 5px
                 line-height: 23px
                 font-size: 12px
                 span 
@@ -93,16 +94,20 @@
 @media screen and ( max-width:525px)
     .title
         margin-bottom: 20px
+        font-size: 20px
+        max-width: 180px
+        height: 50px
+        line-height: 44px
     .menu
         position: fixed
         flex-direction: column
         justify-content: center
-        align-items: center
+        align-items: left
         top: 0
         left: -100%
-        width: 40%
+        width: 47%
         height: 100vh
-        padding: 20px 15px
+        padding: 20px 5px
         background-color: rgba(0,0,0, .8)
         transition: 0.6s all
         font-size: 15px
@@ -136,11 +141,14 @@
             &:nth-child(3)
                 transform: translateY(3px) rotate(45deg)
     .main
-        background-size: 600px 400px
-        background-position: bottom
-        min-height: 500px
+        background-size: 400px 250px
+        background-position: bottom 
+        min-height: 450px
         .tablet
             display: none
+        h2 
+            font-size: 16px
+            height: 85px
     .skills
         padding: 20px 0
     .portfolio
