@@ -1,76 +1,178 @@
-@media (max-width: 1200px) {}    
-.main
-    max-height: 800px
-    background-size: 1440px 800px
-    background-position: top
-    .tablet
-        top: 217px
-        left: 85px
-        line-height: 21px
-        font-size: 10px
-        span 
-            font-size: 12px
-    h1 
-        max-width: 450px
-        margin-bottom: 10px
-    h2 
-        font-size:    20px
-        max-width: 500px  
-
-.carousel-item 
-    height: 600px
-    img
-        height: 240px
-        width: 254px
-        transform: translate(-31%, 18%) 
-.title 
-    font-size: 33px 
-    max-width: 200px
-.portfolio
+@media screen and ( max-width:1450px)       
+    .main
+        min-height: 800px
+        background-size: 1440px 800px
+        background-position: top
+        .tablet
+            img 
+                width: 250px
+                height: 350px
+            &_text
+                top: 66px
+                left: 35px
+                line-height: 23px
+                font-size: 12px
+                span 
+                    font-size: 13px
+        h1 
+            max-width: 450px
+            margin-bottom: 10px
+        h2 
+            font-size:    20px
+            max-width: 500px  
     .carousel-item 
+        height: 600px
         img
-            height: 328px
-            width: 337px
-            transform: translate(-31%, 48%)
-    .carousel-caption
-        a
-            transform: rotate(-30deg) translate(110px, 20px) 
+            height: 240px
+            width: 254px
+            transform: translate(-31%, 18%) 
+    .title 
+        font-size: 33px 
+        max-width: 200px
+    .portfolio
+        .carousel-item 
+            img
+                height: 328px
+                width: 337px
+                transform: translate(-31%, 48%)
+        .carousel-caption
+            a
+                transform: rotate(-30deg) translate(110px, 20px)
+        .carousel-control-prev
+            left: 10px 
 
-@media (max-width: 925px) {}
-.main
-    padding-top: 30px
-    min-height: 740px
-    background-size: 1320px 740px
-    background-position: top
-    .tablet
-        top: 205px
-        left: 50px
-        line-height: 19px
-        font-size: 10px
-        span 
-            font-size: 12px
-    h1 
-        max-width: 400px
-        font-size: 20px
-    h2 
-        max-width: 450px
+@media screen and ( max-width:1025px)
+    .title
+        font-size: 28px
+    header
+        nav 
+            .menu 
+                &_item
+                    font-size: 16px
+    .main
+        padding-top: 30px
+        min-height: 600px
+        background-size: 1020px 600px
+        background-position: top
+        h1 
+            max-width: 300px
+            font-size: 20px
+        h2 
+            max-width: 400px
+            font-size: 14px
+            line-height: 25px
+        .tablet
+            margin-left: 30px
+            img 
+                width: 200px
+                height: 300px
+            &_text
+                top: 54px
+                left: 30px
+                line-height: 20px
+                font-size: 10px
+                span 
+                    font-size: 12px
+    .portfolio
+        .carousel-item 
+            img
+                height: 235px
+                width: 242px
+                transform: translate(-31%, 95%)
+        .carousel-caption
+            a
+                font-size: 12px
+                transform: rotate(-30deg) translate(100px, -25px)
+        .carousel-control-prev
+            top: 60px
+            left: 130px 
+        .carousel-control-next
+            top: 60px
+            right: 260px
+
+@media screen and ( max-width:525px)
+    .title
+        margin-bottom: 20px
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 40%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
         font-size: 15px
-.portfolio
-    .carousel-item 
-        img
-            height: 298px
-            width: 304px
-            transform: translate(-31%, 60%)
-    .carousel-caption
-        a
-            transform: rotate(-30deg) translate(110px, 1px)
-
-@media (max-width: px) {} 
-.main 
-.tablet
-    display: none
-.skills 
-    &_list 
-        flex-direction: row
+        .menu_item
+           font-size: 13px
+           margin-bottom: 15px
+        &_active
+            left: 0    
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span 
+            display: block 
+            height: 2px
+            width: 100%
+            background-color: #fff 
+            margin-bottom: 2px
+            transition: 0.5s all
+    .hamburger_active 
+        span 
+            margin-bottom: -2px 
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .main
+        background-size: 600px 400px
+        background-position: bottom
+        min-height: 500px
+        .tablet
+            display: none
+    .skills
+        padding: 20px 0
+    .portfolio
+        background-size: 500px 350px
+        background-position: bottom
+        min-height: 400px
+        padding: 20px 0
+        h1 
+            margin-bottom: 40px
+        .carousel-inner 
+            height: 300px
+            img 
+                height: 170px
+                width: 180px
+                transform: translate(-32%, 15%)  
+        .carousel-caption
+            a  
+                transform: rotate(-30deg) translate(11px, 6px)   
+    .carousel-control-prev
+        display: none
+    .carousel-control-next
+        display: none
+    .news
+        margin: 0 auto
+        &_blog
+            flex-direction: column
+            align-items: center
+            &_item
+                margin-bottom: 10px        
+    footer
+        padding: 20px 0 25px 0
+        .footer_contacts
+            width: 300px
 
     

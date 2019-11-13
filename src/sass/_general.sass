@@ -9,10 +9,9 @@ header
         z-index: 9 
         .menu
             padding-top: 10px
+            padding-left: 30px
             display: flex
-            flex-direction: row
             list-style: none
-            margin-left: 30px
             &_item
                 text-decoration: none
                 color: white
@@ -25,19 +24,24 @@ header
                 i 
                     color: #CCD9D7
 .main
-    position: relative
     min-height: 1000px
     padding: 60px 0 60px 0
     background: url("../img/firstbg2.png") center center/cover no-repeat
+    background-color: #94A4A5
     .tablet
-        position: absolute
-        top: 255px
-        left: 123px
-        line-height: 29px
-        font-size: 13px
-        span 
-            font-weight: bold
-            font-size: 15px
+        display: block
+        top: -110px
+        position: relative
+        margin-left: 50px
+        &_text
+            position: absolute
+            top: 77px
+            left: 41px
+            line-height: 29px
+            font-size: 13px
+            span 
+                font-weight: bold
+                font-size: 15px
     h1 
         max-width: 550px
     h2 
@@ -56,7 +60,7 @@ header
 .skills
     background-color: #CCD9D7
     padding: 60px 0 60px 0
-    height: 700px
+    min-height: 700px
     .skills_list
         margin-top: 20px
         list-style: none
@@ -85,7 +89,7 @@ header
 .portfolio
     position: relative
     padding: 50px 0 60px 0
-    height: 1000px
+    min-height: 1000px
     background-color: #AEC0BD
     background: url("../img/laptop2.jpg") center center/65% no-repeat 
     background-color: #201f25
