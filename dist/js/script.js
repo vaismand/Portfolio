@@ -22,7 +22,10 @@ $(document).ready(function(){
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        autoplay: true,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>'
     });
 });
 
