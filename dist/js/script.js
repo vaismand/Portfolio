@@ -20,12 +20,28 @@ $(document).ready(function(){
     $('.portfolio-carousel').slick({
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1300,
         fade: true,
         cssEase: 'linear',
         autoplay: true,
         prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>'
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+        responsive: [
+            {
+              breakpoint: 780,
+              settings: {
+                arrows: false,
+                infinite: true,
+                dots: false
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
 });
 

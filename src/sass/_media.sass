@@ -72,6 +72,24 @@
             .portfolio_img
                 width: 537px
                 height: 288px
+@media screen and ( max-width:780px)
+    .main
+        .tablet
+            display: none
+    footer
+        padding: 20px 0
+    .portfolio
+        min-height: 600px
+        .portfolio-carousel
+            top: 67px   
+    .news
+        min-height: 600px
+        &_blog 
+            flex-direction: column
+            align-items: center
+            &_item
+                width: 310px
+                margin-bottom: 15px            
 @media screen and ( max-width:525px)
     .title
         margin-bottom: 20px
@@ -93,14 +111,14 @@
         transition: 0.6s all
         font-size: 15px
         .menu_item
-           font-size: 13px
-           margin-bottom: 15px
+        font-size: 13px
+        margin-bottom: 15px
         &_active
             left: 0    
     .hamburger
         display: block
         position: absolute
-        right: 10px
+        right: 20px
         top: 50%
         transform: translateY(-50%)
         width: 26px
@@ -139,19 +157,11 @@
         padding: 20px 0
         h1 
             margin-bottom: 40px
-        .carousel-inner 
-            height: 300px
-            img 
-                height: 170px
-                width: 180px
-                transform: translate(-32%, 15%)  
-        .carousel-caption
-            a  
-                transform: rotate(-30deg) translate(11px, 6px)   
-    .carousel-control-prev
-        display: none
-    .carousel-control-next
-        display: none
+        .portfolio-carousel
+            top: -5px
+            .portfolio_img
+                width: 275px
+                height: 210px
     .news
         margin: 0 auto
         &_blog
