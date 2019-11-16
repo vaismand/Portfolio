@@ -6,7 +6,7 @@ header
         position: fixed
         display: inline-block
         width: 100vw
-        background-color: #144450
+        background-image: radial-gradient( circle 602px at 22.9% 55.3%,  rgba(31,116,116,1) 7.1%, rgba(3,27,27,1) 90% )
         z-index: 9 
         .menu
             padding-top: 10px
@@ -26,9 +26,7 @@ header
                     color: #66FCF1
 .main
     min-height: 1000px
-    padding: 60px 0 60px 0
-    background: url("../img/firstbg3.png") center center/cover no-repeat
-    background-color: #1F2833
+    padding: 120px 0 60px 0
     .tablet
         display: block
         top: -110px
@@ -44,7 +42,8 @@ header
                 font-weight: bold
                 font-size: 15px
     h1 
-        max-width: 550px
+        max-width: 800px
+        font-size: 60px
     h2 
         display: block
         margin: 0 auto
@@ -52,16 +51,11 @@ header
         margin-top: 15px
         text-align: center
         font-size: 25px
-        text-shadow: 2px 1px #45A29E
-        color: #66FCF1
+        color: white
         line-height: 45px
-        border: solid 2px #66FCF1
-        border-radius: 40px
-        background-color: #1F2833
     
 .skills
     position: relative
-    background-color: #1F2833
     padding: 60px 0 60px 0
     min-height: 700px
     .skills_list
@@ -92,7 +86,7 @@ header
         top: 0
         height: 5px
         width: 400px
-        color: white   
+        color: #66FCF1b5   
         margin: 0 auto
 .small
     width: 70px
@@ -100,11 +94,10 @@ header
     position: relative
     padding: 50px 0 60px 0
     min-height: 1000px
-    background: url("../img/SurfaceLaptop.jpg")
+    background: url("../img/SurfaceLaptop.png")
     background-size: 1200px 750px
     background-repeat: no-repeat
     background-position: center center  
-    background-color: black
     h1 
         margin-bottom: 0
     .portfolio-carousel
@@ -112,10 +105,10 @@ header
         display: block
         margin: 0 auto
         max-width: 650px 
-        top: 132px
+        top: 56px
         img
             width: 647px
-            height: 438px
+            height: 439px
             margin: 0 auto
     .slick-prev, .slick-next  
         position: absolute
@@ -127,16 +120,15 @@ header
         padding: 0
         margin: 0
         i 
-            color: #CCD9D7
+            color: #66FCF1
+            background-color: none
             font-size: 50px
     .slick-next
         right: -86px
         left: auto
 .news
     min-height: 700px
-    background-color: #1F2833
     padding: 60px 0
-    background: url("../img/network.jpg") center center/cover no-repeat
     &_blog
         display: flex
         flex-direction: row
@@ -154,9 +146,44 @@ header
                 margin-bottom: 15px
                 font-style: bold
                 color: #66FCF1
+    .button 
+        width: 130px
+        height: 40px
+        background: linear-gradient(to bottom, #031b1b 0%,#3e5158 100%)
+        border: none
+        border-radius: 5px
+        position: relative
+        border-bottom: 4px solid #243035
+        color: #66FCF1
+        text-shadow: 1px 1px 1px rgba(0,0,0,.4)
+        font-size: 15px
+        line-height: 35px
+        text-align: left
+        text-indent: 5px
+        box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2)
+        cursor: pointer
+        display: block
+        margin: 20px auto
+        text-decoration: none
+    .button:active 
+        box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2)
+        top: 1px
+    .button:after 
+        content: ""
+        width: 0
+        height: 0
+        display: block
+        border-top: 20px solid #243035
+        border-bottom: 20px solid #243035
+        border-left: 16px solid transparent
+        border-right: 20px solid #243035
+        position: absolute
+        opacity: 0.6
+        right: 0
+        top: 0
+        border-radius: 0 5px 5px 0
 footer 
     min-height: 100px
-    background-color: #1F2833
     padding: 50px 0
     .footer_contacts
         margin: 0 auto
