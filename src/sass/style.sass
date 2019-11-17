@@ -5,22 +5,12 @@ body
 .container 
     max-width: 950px
     margin: 0 auto
-.title
-    max-width: 250px
-    display: block
-    margin: 0 auto
-    text-align: center
-    font-weight: 700
-    font-size: 40px
-    line-height: 60px
-    color: #66FCF1
-    margin-bottom: 60px
 .divider
     display: table
     font-size: 40px
     text-align: center 
     width: 75%					
-    margin: 40px auto			      
+    margin: 40px auto		      
 .divider span 
     display: table-cell 
     position: relative
@@ -38,6 +28,30 @@ body
     width: auto 
     white-space: nowrap
 .divider span:last-child
+    background-image: linear-gradient(90deg, #66FCF1, transparent)
+.title
+    display: table
+    font-size: 65px
+    text-align: center 
+    width: 75%					
+    margin: 40px auto		      
+.title span 
+    display: table-cell 
+    position: relative
+.title span:first-child, .title span:last-child 
+    width: 50%
+    top: 48px						
+    background-size: 100% 2px			
+    background-position: 0 0, 0 100%
+    background-repeat: no-repeat
+.title span:first-child
+    background-image: linear-gradient(90deg, transparent, #66FCF1)
+.title span:nth-child(2) 
+    color: #66FCF1 
+    padding: 0px 5px 
+    width: auto 
+    white-space: nowrap
+.title span:last-child
     background-image: linear-gradient(90deg, #66FCF1, transparent)
 .hamburger
 	display: none
