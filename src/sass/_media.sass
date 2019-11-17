@@ -67,6 +67,10 @@
         font-size: 25px
     .divider span:first-child, .divider span:last-child 
         top: 20px
+    .title
+        font-size: 25px
+    .title span:first-child, .title span:last-child 
+        top: 19px
     header
         nav
             .menu
@@ -76,12 +80,12 @@
                 align-items: left
                 top: 0
                 left: -100%
-                width: 47%
+                width: 55%
                 height: 100vh
                 padding-left: 10px
-                background-color: rgba(0,0,0, .8)
+                background-color: rgba(0,0,0, .9)
                 transition: 0.6s all
-                font-size: 15px
+                font-size: 13px
                 &_item
                     font-size: 16px
                     margin-bottom: 30px
@@ -110,32 +114,34 @@
             &:nth-child(2)
                 display: none
             &:nth-child(3)
-                transform: translateY(3px) rotate(45deg)
+                transform: translateY(3px) rotate(45deg) 
     .main
         min-height: 450px
         padding-bottom: 0
         h2 
-            font-size: 16px
+            font-size: 15px
             padding: 5px 10px
         .service
             flex-direction: column
             margin-top: 40px
             &_item
-                margin-bottom: 140px
+                margin-bottom: 160px
     .skills
         padding: 20px 0
+        .skills_list_item
+            padding: 10px 10px    
     .portfolio
-        background-size: 500px 350px
+        background-size: 360px 240px
         background-position: bottom
-        min-height: 500px
+        min-height: 400px
         padding: 20px 0
         h1 
             margin-bottom: 40px
         .portfolio-carousel
-            top: 67px
+            top: 62px
             .portfolio_img
-                width: 275px
-                height: 210px
+                width: 195px
+                height: 140px
     .news
         padding-top: 10px
         margin: 0 auto
@@ -143,10 +149,18 @@
             flex-direction: column
             align-items: center
             &_item
-                margin-bottom: 10px        
+                margin-bottom: 10px
+                width: 235px
+                font-size: 14px  
+                .news_title
+                    font-size: 20px
+                    height: 120px 
+        .button
+            top: 5%     
     footer
         padding: 20px 0 25px 0
         .footer_contacts
-            width: 300px
+            width: 230px
+            font-size: 20px
 
     

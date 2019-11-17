@@ -24,11 +24,11 @@ $(document).ready(function(){
         fade: true,
         cssEase: 'linear',
         autoplay: true,
-        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-angle-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-angle-right"></i></button>',
+        prevArrow: '<div class="slick-prev"><i class="fas fa-angle-left"></i></div>',
+        nextArrow: '<div class="slick-next"><i class="fas fa-angle-right"></i></div>',
         responsive: [
             {
-              breakpoint: 780,
+              breakpoint: 800,
               settings: {
                 arrows: false,
                 infinite: true,
@@ -44,22 +44,5 @@ $(document).ready(function(){
         ]
     });
 });
-
-function myFunction() {
-document.getElementById("dropMenu").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-if (!event.target.matches('.service_button')) {
-    var dropdowns = document.getElementsByClassName("service_descr");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-    }
-    }
-  }
-};
 
 new WOW().init();

@@ -70,8 +70,10 @@ header
             border-top: none     
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
             z-index: 1
+            transition: 2s all
         .service_item:hover .service_descr
             display: block
+            transition: 2s all
 .skills
     position: relative
     padding: 60px 0 60px 0
@@ -131,6 +133,7 @@ header
         background-color: black
         padding: 0
         margin: 0
+        cursor: pointer
         i 
             color: #66FCF1
             background-color: none
@@ -146,6 +149,8 @@ header
         flex-direction: row
         justify-content: space-around
         &_item
+            position: relative
+            height: 480px
             padding: 10px 10px
             width: 290px
             text-align: center
@@ -153,12 +158,18 @@ header
             color: white
             border: solid 6px #144450
             border-radius: 10px
+            .news_text
+                height: 220px
             .news_title
+                height: 140px
+                width: 130
                 font-size: 25px
                 margin-bottom: 15px
                 font-style: bold
                 color: #66FCF1
     .button 
+        position: absolute
+        top: 0%
         width: 130px
         height: 40px
         background: linear-gradient(to bottom, #031b1b 0%,#3e5158 100%)
