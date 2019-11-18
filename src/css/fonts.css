@@ -1,47 +1,4 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Light.eot');
-    src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Light.woff2') format('woff2'),
-        url('../fonts/Raleway-Light.woff') format('woff'),
-        url('../fonts/Raleway-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Bold.eot');
-    src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Raleway-Bold.woff2') format('woff2'),
-        url('../fonts/Raleway-Bold.woff') format('woff'),
-        url('../fonts/Raleway-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-Regular.eot');
-    src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Raleway-Regular.woff2') format('woff2'),
-        url('../fonts/Raleway-Regular.woff') format('woff'),
-        url('../fonts/Raleway-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jomolhari';
-    src: url('../fonts/Jomolhari-Regular.eot');
-    src: url('../fonts/Jomolhari-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Jomolhari-Regular.woff') format('woff'),
-        url('../fonts/Jomolhari-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'McLaren';
     src: url('../fonts/McLaren-Regular.eot');
     src: url('../fonts/McLaren-Regular.eot?#iefix') format('embedded-opentype'),
@@ -49,6 +6,7 @@
         url('../fonts/McLaren-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
